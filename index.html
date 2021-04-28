@@ -12,21 +12,80 @@
 
 <body>
     <div id=main>
-        <!--En tête-->
+        <!--En Tête/Header-->
         <header class="flex">
             <div class="logo">
                 <img src="images/logo/Reservia@3x.png">
             </div>
-
-            <!--Menu Naviguation-->
+            <!--Menu Naviguation/Naviguation Menu-->
             <nav class="flex">
                 <ul>
-                    <li><a href="#Accomodation">Hébergements</a></li>
-                    <li><a href="#Activity">Activités</a></li>
-                    <li class="Sign Up">S'inscrire</li>
+                    <li class="menu"><a href="#Accomodation">Hébergements</a></li>
+                    <li class="menu"><a href="#Activity">Activités</a></li>
+                    <li id="Sign Up"><a href="#">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
+
+        <!--Search Bar and Filters/Barre de Recherche et Filtres-->
+        <section id="filters">
+            <h1>Trouvez votre hébergement de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <div class "search bar">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" id="recherche" value="Marseille, France">
+                <button id="bouton">Rechercher</button>
+            </div>
+
+            <div id="filtre">
+                <h2>Filtres</h2>
+                <div class="critere">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h2>Economique</h2>
+                </div>
+                <div class="critere">
+                    <i class="fas fa-child"></i>
+                    <h2>Familial</h2>
+                </div>
+                <div class="critere">
+                    <i class="fas fa-heart"></i>
+                    <h2>Romantique</h2>
+                </div>
+                <div class="critere">
+                    <i class="fas fa-dog"></i>
+                    <h2>Animaux autorisés</h2>
+                </div>
+                <div id "information">
+                    <i class="fas fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Accomodation in Marseille/Hébergements à Marseille-->
+        <section id="accomodation_in_marseille">
+            <div id="marseille_result">
+                <h3>Hébergements à Marseille</h3>
+                <div class="accomodation_card">
+
+                    <div class="hotel">
+                        <a href="#" class="card">
+                            <img class="hotel_photo" src="images/hebergements/4_small/la_cannebiere.jpg" alt="Auberge de la cannebiere">
+                            <div class="hotel_description">
+                                <p class="accomodation_name">Auberge de la cannebière</p>
+                                <p>Nuit à partir de 25€</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </div>
 </body>
 
