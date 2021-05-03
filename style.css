@@ -1,77 +1,48 @@
-/*Download Raleway Font/Téléchargement de la police Raleway*/
-
-@font-face {
-    font-family: 'Ralewayblack';
-    src: url('Raleway-Black.ttf') format('ttf');
-    src: url('Raleway-BlackItalic') format('ttf');
-}
-
-@font-face {
-    font-family: 'RalewayBold';
-    src: url('Raleway-Bold.ttf') format('tff');
-    src: url('Raleway-BoldItalic.ttf') format('tff')
-}
-
-@font-face {
-    font-family: 'Raleway-ExtraBold';
-    src: url('Raleway-ExtraBold.ttf') format('tff');
-    src: local('Raleway-ExtraBoldItalic') format('tff')
-}
-
-
-/*General/Général*/
-
-body {
-    font-family: 'Raleway-Black';
-}
-
-#main_bloc {
-    max-width: 1440px;
-    margin: auto
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-/*Header/En tête*/
-
-.logo img {
-    width: 92px;
-    max-height: 100%;
-    margin-top: 60px;
-    margin-left: 50px;
-}
-
-.navigation {
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu a {
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-
-#sign_up a {
-    text-decoration: none;
-    font-family: 'Raleway-Bold';
-    font-weight: 700;
-    font-size: 12px;
-    padding: 50px 80px 0;
-}
-
-.menu a:hover {
-    color: #0065FC;
-    border-top: 2px #0065FC solid;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px
-}
+    /*Download Raleway Font/Téléchargement de la police Raleway*/
+    
+    @font-face {
+        font-family: 'Ralewayblack';
+        src: url('Raleway-Black.ttf') format('ttf');
+        src: url('Raleway-BlackItalic') format('ttf');
+    }
+    
+    @font-face {
+        font-family: 'RalewayBold';
+        src: url('Raleway-Bold.ttf') format('tff');
+        src: url('Raleway-BoldItalic.ttf') format('tff')
+    }
+    
+    @font-face {
+        font-family: 'Raleway-ExtraBold';
+        src: url('Raleway-ExtraBold.ttf') format('tff');
+        src: local('Raleway-ExtraBoldItalic') format('tff')
+    }
+    /*General/Général*/
+    
+    body {
+        font-family: 'Raleway-Black';
+    }
+    
+    #main_bloc {
+        max-width: 1440px;
+        margin: auto
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    /*Header/En tête*/
+    
+    .logo img {
+        width: 92px;
+        max-height: 100%;
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    
+    #main_menu {
+        display: flex;
+        justify-content: space-between;
+    }
