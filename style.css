@@ -1,48 +1,126 @@
-    /*Download Raleway Font/Téléchargement de la police Raleway*/
-    
-    @font-face {
-        font-family: 'Ralewayblack';
-        src: url('Raleway-Black.ttf') format('ttf');
-        src: url('Raleway-BlackItalic') format('ttf');
-    }
-    
-    @font-face {
-        font-family: 'RalewayBold';
-        src: url('Raleway-Bold.ttf') format('tff');
-        src: url('Raleway-BoldItalic.ttf') format('tff')
-    }
-    
-    @font-face {
-        font-family: 'Raleway-ExtraBold';
-        src: url('Raleway-ExtraBold.ttf') format('tff');
-        src: local('Raleway-ExtraBoldItalic') format('tff')
-    }
-    /*General/Général*/
-    
-    body {
-        font-family: 'Raleway-Black';
-    }
-    
-    #main_bloc {
-        max-width: 1440px;
-        margin: auto
-    }
-    
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-    /*Header/En tête*/
-    
-    .logo img {
-        width: 92px;
-        max-height: 100%;
-        margin-top: 60px;
-        margin-left: 50px;
-    }
-    
-    #main_menu {
-        display: flex;
-        justify-content: space-between;
-    }
+        /*Download Raleway Font/Téléchargement de la police Raleway*/
+        
+        @font-face {
+            font-family: 'Ralewayblack';
+            src: url('Raleway-Black.ttf') format('ttf');
+            src: url('Raleway-BlackItalic') format('ttf');
+        }
+        
+        @font-face {
+            font-family: 'RalewayBold';
+            src: url('Raleway-Bold.ttf') format('tff');
+            src: url('Raleway-BoldItalic.ttf') format('tff')
+        }
+        
+        @font-face {
+            font-family: 'Raleway-ExtraBold';
+            src: url('Raleway-ExtraBold.ttf') format('tff');
+            src: url('Raleway-ExtraBoldItalic') format('tff')
+        }
+        /*General/Général*/
+        
+        body {
+            font-family: 'Raleway-Black';
+        }
+        
+        #main_bloc {
+            max-width: 1440px;
+            margin: auto
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h1,
+        h2 {
+            font-family: 'Raleway-Bold';
+        }
+        /*Header/En tête*/
+        
+        .logo img {
+            width: 92px;
+            height: 27px;
+            margin-top: 53px;
+            margin-left: 57px;
+        }
+        
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        #main_menu {
+            display: flex;
+            text-decoration: none;
+            margin-top: 50px;
+        }
+        
+        #sign_up {
+            color: #0065fc;
+            font-weight: bold;
+            margin-right: 80px;
+            margin-left: 35px;
+        }
+        
+        .menu a {
+            display: flex;
+            justify-content: left;
+            color: black;
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+        
+        #main_menu a:hover {
+            color: #0065fc;
+            border-top: #0065fc solid 2px;
+        }
+        /*Search Bar and Filters/Barre de Recherche et Filtres*/
+        
+        h1 {
+            font-size: 25px
+        }
+        
+        #filters_and_search_bar {
+            margin-left: 57px;
+        }
+        
+        .search_bar {
+            display: flex;
+            align-items: center;
+            margin: 50px 0 0 0;
+        }
+        
+        .iconmap {
+            background-color: #f2f2f2;
+            padding: 15px;
+            text-align: center;
+            border-radius: 15px 0px 0px 15px;
+            padding-top: 10px;
+        }
+        
+        #search {
+            font-weight: bold;
+            padding: 11px;
+            border-color: #f2f2f2;
+            outline: none
+        }
+        
+        #bouton {
+            background-color: #0065FC;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            height: 50px;
+            width: 130px;
+            border: none;
+            color: white;
+            outline: none;
+            font-weight: bold;
+        }
