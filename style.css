@@ -1,206 +1,323 @@
-   /*Download Raleway Font/Téléchargement de la police Raleway*/
-   
-   @font-face {
-       font-family: 'RalewayBlack';
-       src: url('Raleway-Black.ttf') format('ttf');
-       src: url('Raleway-BlackItalic') format('ttf');
-   }
-   
-   @font-face {
-       font-family: 'RalewayBold';
-       src: url('Raleway-Bold.ttf') format('tff');
-       src: url('Raleway-BoldItalic.ttf') format('tff')
-   }
-   
-   @font-face {
-       font-family: 'RalewayExtraBold';
-       src: url('Raleway-ExtraBold.ttf') format('tff');
-       src: url('Raleway-ExtraBoldItalic') format('tff')
-   }
-   /*General/Général*/
-   
-   body {
-       font-family: 'RalewayBlack';
-   }
-   
-   #main_bloc {
-       max-width: 1440px;
-       margin: auto
-   }
-   
-   h1,
-   h2,
-   h3,
-   .accomodation_name {
-       font-family: 'RalewayBold';
-   }
-   
-   h2 {
-       font-size: 0.9em;
-   }
-   
-   a {
-       text-decoration: none;
-   }
-   
-   a:hover {
-       color: #0065fc;
-   }
-   /*Header/En tête*/
-   
-   header {
-       display: flex;
-       justify-content: space-between;
-   }
-   
-   #main_menu {
-       text-decoration: none;
-       list-style-type: none;
-   }
-   
-   .menu a:hover {
-       color: #0065fc;
-       border-top: 2px #0065fc solid;
-       padding-top: 35px;
-   }
-   
-   nav ul {
-       display: flex;
-       padding-top: 15px;
-   }
-   
-   header ul li {
-       padding-right: 20px;
-       padding-left: 20px;
-   }
-   
-   #sign_up {
-       font-weight: bold;
-       color: #0065fc;
-       text-decoration: none;
-   }
-   
-   #sign_up a:hover {
-       border-top: 2px #0065fc solid;
-       padding-top: 35px
-   }
-   /*Search Bar and Filters/Barre de Recherche et Filtres*/
-   
-   .search_barre {
-       display: flex;
-       align-items: center;
-   }
-   
-   .iconmap {
-       background-color: #f2f2f2;
-       padding: 12px;
-       height: auto;
-       text-align: center;
-       border-radius: 15px 0 0 15px;
-   }
-   
-   #search {
-       padding: 10px;
-       font-weight: bold;
-       border: none;
-   }
-   
-   #search_button {
-       background-color: #0065fc;
-       border: #0065fc;
-       font-weight: bold;
-       padding: 11px;
-       border-radius: 0 15px 15px 0;
-       color: white;
-       text-align: center;
-       height: auto;
-       outline: none;
-       cursor: pointer
-   }
-   
-   #filter {
-       margin-top: 25px;
-       display: flex;
-       flex-wrap: wrap;
-   }
-   
-   .filter_button {
-       display: flex;
-       margin-right: 18px;
-       margin-left: 18px;
-       border: 2px #f2f2f2 solid;
-       border-radius: 15px;
-       padding-right: 15px;
-       cursor: pointer;
-   }
-   
-   .filter_button:hover {
-       background-color: #0065fc;
-   }
-   
-   .icontype {
-       background-color: #DEEBFF;
-       color: #0065fc;
-       padding: 10px;
-       border-radius: 25px;
-       margin-right: 10px;
-       text-align: center;
-   }
-   
-   #info {
-       display: flex;
-       align-items: center;
-       margin-top: 20px;
-       margin-bottom: 20px;
-   }
-   
-   .iconinfo {
-       display: flex;
-       justify-content: center;
-   }
-   
-   .available_info {
-       margin-left: 10px;
-   }
-   /*Accomodation in Marseille/Hébergements à Marseille*/
-   
-   #accomodation_in_marseille {
-       display: flex;
-       justify-content: space-between;
-       flex-wrap: wrap;
-   }
-   
-   .card {
-       display: inline-block;
-       height: 100%
-   }
-   
-   #marseille_result {
-       background-color: #f2f2f2;
-       border-radius: 10px;
-       width: 875px;
-       height: 625px;
-       padding-top: 35px;
-       padding-left: 40px;
-       padding-right: 40px;
-   }
-   
-   h3 {
-       font-size: 1.3em
-   }
-   
-   #accomodation_box {
-       display: flex;
-       justify-content: space-between;
-       flex-direction: column;
-       width: 100%;
-       height: 90%;
-   }
-   
-   .hotel_photo {
-       border-top-left-radius: 10px;
-       border-top-right-radius: 10px;
-       width: 240px;
-       height: 113px;
-       object-fit: cover;
-   }
+/*Download Raleway Font/Téléchargement de la police Raleway*/
+
+@font-face {
+    font-family: 'RalewayBlack';
+    src: url('Raleway-Black.ttf') format('ttf');
+    src: url('Raleway-BlackItalic') format('ttf');
+}
+
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('Raleway-Bold.ttf') format('tff');
+    src: url('Raleway-BoldItalic.ttf') format('tff')
+}
+
+@font-face {
+    font-family: 'RalewayExtraBold';
+    src: url('Raleway-ExtraBold.ttf') format('tff');
+    src: url('Raleway-ExtraBoldItalic') format('tff')
+}
+
+
+/*General/Général*/
+
+body {
+    font-family: 'RalewayBlack';
+}
+
+#main_bloc {
+    max-width: 1440px;
+    margin: auto
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'RalewayBold';
+}
+
+h2 {
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0065fc;
+}
+
+
+/*Header/En tête*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main_menu {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.menu a:hover {
+    color: #0065fc;
+    border-top: 2px #0065fc solid;
+    padding-top: 35px;
+}
+
+nav ul {
+    display: flex;
+    padding-top: 15px;
+}
+
+header ul li {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#sign_up {
+    font-weight: bold;
+    color: #0065fc;
+    text-decoration: none;
+}
+
+#sign_up a:hover {
+    border-top: 2px #0065fc solid;
+    padding-top: 35px
+}
+
+
+/*Search Bar and Filters/Barre de Recherche et Filtres*/
+
+.search_barre {
+    display: flex;
+    align-items: center;
+}
+
+.iconmap {
+    background-color: #f2f2f2;
+    padding: 12px;
+    height: auto;
+    text-align: center;
+    border-radius: 15px 0 0 15px;
+}
+
+#search {
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+}
+
+#search_button {
+    background-color: #0065fc;
+    border: #0065fc;
+    font-weight: bold;
+    padding: 11px;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    text-align: center;
+    height: auto;
+    outline: none;
+    cursor: pointer
+}
+
+#filter {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter_button {
+    display: flex;
+    margin-right: 18px;
+    margin-left: 18px;
+    border: 2px #f2f2f2 solid;
+    border-radius: 30px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.filter_button:hover {
+    background-color: #0065fc;
+}
+
+.icontype {
+    background-color: #DEEBFF;
+    color: #0065fc;
+    padding: 10px;
+    border-radius: 25px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.iconinfo {
+    display: flex;
+    justify-content: center;
+}
+
+.available_info {
+    margin-left: 10px;
+}
+
+.iconglass {
+    visibility: hidden;
+}
+
+
+/*Accomodation in Marseille/Hébergements à Marseille*/
+
+#accommodation_in_marseille {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: inline-block;
+    height: 100%
+}
+
+#marseille_result {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 875px;
+    height: 625px;
+    padding-top: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+#accommodation_box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+}
+
+.first_line {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.second_line {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+.hotel_photo {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 240px;
+    height: 113px;
+    object-fit: cover;
+}
+
+.hotel_photo:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.hotel_box {
+    background-color: white;
+    padding: 6px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+p.accommodation_name {
+    font-family: 'RalewayBold';
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.hotel_stars {
+    padding-left: 15px;
+}
+
+.blue {
+    color: #0065fc;
+}
+
+.grey {
+    color: #f2f2f2
+}
+
+.accommodation_in_marseille {
+    display: flex;
+}
+
+.display_more {
+    padding-left: 15px;
+}
+
+.display_more:hover {
+    color: blue
+}
+
+
+/*Most popular/ Les plus populaires*/
+
+aside {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding-top: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 625px;
+    width: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 33px;
+    align-items: center;
+}
+
+#aside_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+}
+
+#aside_title h2 {
+    font-size: 1.5em
+}
+
+.icone_aside {
+    font-size: 1.5em;
+    align-items: center;
+}
+
+.popular_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    width: 80%;
+    align-items: center;
+}
+
+.hotel_photo_aside {
+    height: 135px;
+    width: 127px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover
+}
