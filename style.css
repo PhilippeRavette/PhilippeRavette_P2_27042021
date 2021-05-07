@@ -100,7 +100,7 @@ header ul li {
 
 /*Search Bar and Filters/Barre de Recherche et Filtres*/
 
-.search_barre {
+.search_bar {
     display: flex;
     align-items: center;
 }
@@ -116,7 +116,6 @@ header ul li {
 #search {
     padding: 10px;
     font-weight: bold;
-    border: none;
 }
 
 #search_button {
@@ -129,7 +128,11 @@ header ul li {
     text-align: center;
     height: auto;
     outline: none;
-    cursor: pointer
+    cursor: pointer;
+}
+
+#search_button:active {
+    background-color: #DEEBFF;
 }
 
 #filter {
@@ -193,7 +196,7 @@ header ul li {
 
 .card {
     display: inline-block;
-    height: 100%
+    height: 100%;
 }
 
 #marseille_result {
@@ -227,7 +230,7 @@ h3 {
 .second_line {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 90px;
+    padding-bottom: 10px;
 }
 
 .hotel_photo {
@@ -277,8 +280,12 @@ p.accommodation_name {
     transition: all 0.2s ease-in-out;
 }
 
-.display_more:hover {
-    color: blue
+.display_more a:hover {
+    color: #0065fc;
+}
+
+.display_more {
+    padding-bottom: 30px;
 }
 
 
@@ -378,8 +385,8 @@ aside {
 #activity_box {
     display: flex;
     justify-content: space-between;
-    width: 150%;
-    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
     margin: auto;
 }
 
@@ -393,8 +400,6 @@ aside {
 #vieux_port {
     background-color: white;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     width: 306px;
     height: auto;
     box-shadow: 0px 0px 12px 2px #00000040;
@@ -420,8 +425,6 @@ aside {
     margin-bottom: auto;
     background-color: white;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     width: 297px;
     height: auto;
     box-shadow: 0px 0px 12px 2px #00000040;
@@ -437,8 +440,6 @@ aside {
 }
 
 #frioul {
-    display: flex;
-    flex-direction: column;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 12px 2px #00000040;
@@ -457,8 +458,6 @@ aside {
 #calanques {
     background-color: white;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     width: 297px;
     height: auto;
     box-shadow: 0px 0px 12px 2px #00000040;
@@ -475,8 +474,6 @@ aside {
 #notre_dame {
     background-color: white;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     width: 297px;
     height: auto;
     box-shadow: 0px 0px 12px 2px #00000040;
@@ -493,8 +490,6 @@ aside {
 #longchamp {
     background-color: white;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
     width: 297px;
     height: auto;
     box-shadow: 0px 0px 12px 2px #00000040;
