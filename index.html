@@ -78,7 +78,7 @@
                                     <img class="hotel_photo" src="images/hebergements/4_small/la_cannebiere.jpg" alt="Auberge de la Cannebiere">
                                     <p class="accommodation_name">Auberge de la Cannebière</p>
                                     <div class="hotel_stars">
-                                        <p>Nuit à partir de 25<span>€</span></p>
+                                        <p class="price">Nuit à partir de 25<span>€</span></p>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
@@ -93,7 +93,7 @@
                                     <img class="hotel_photo" src="images/hebergements/4_small/le_port.jpg" alt="Hôtel du port">
                                     <p class="accommodation_name">Hôtel du port</p>
                                     <div class="hotel_stars">
-                                        <p>Nuit à partir de 52<span>€</span></p>
+                                        <p class="price">Nuit à partir de 52<span>€</span></p>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
@@ -109,7 +109,7 @@
                                     <img class="hotel_photo" src="images/hebergements/4_small/les_mouettes.jpg" alt="Hôtel les mouettes">
                                     <p class="accommodation_name">Hôtel les mouettes</p>
                                     <div class="hotel_stars">
-                                        <p>Nuit à partir de 76<span>€</span></p>
+                                        <p class="price">Nuit à partir de 76<span>€</span></p>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
@@ -126,7 +126,7 @@
                                     <img class="hotel_photo" src="images/hebergements/4_small/la_mer.jpg" alt="Hôtel de la mer">
                                     <p class="accommodation_name">Hôtel de la mer</p>
                                     <div class="hotel_stars">
-                                        <p>Nuit à partir de 46<span>€</span></p>
+                                        <p class="price">Nuit à partir de 46<span>€</span></p>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
@@ -141,7 +141,7 @@
                                     <img class="hotel_photo" src="images/hebergements/4_small/le_panier.jpg" alt="Auberge le Panier">
                                     <p class="accommodation_name">Auberge le Panier</p>
                                     <div class="hotel_stars">
-                                        <p>Nuit à partir de 52<span>€</span></p>
+                                        <p class="price">Nuit à partir de 52<span>€</span></p>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
@@ -154,9 +154,9 @@
                             <div class="hotel_box">
                                 <a href="#" class="card">
                                     <img class="hotel_photo" src="images/hebergements/4_small/chez_amina.jpg" alt="Hôtel chez AMINA">
-                                    <p class="accommodation_name">Hotel chez AMINA</p>
+                                    <p class="accommodation_name">Hôtel chez AMINA</p>
                                     <div class="hotel_stars">
-                                        <p>Nuit à partir de 96<span>€</span></p>
+                                        <p class="price">Nuit à partir de 96<span>€</span></p>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
                                         <i class="blue fas fa-star"></i>
@@ -168,7 +168,7 @@
 
                         </div>
                         <div class="display_more">
-                            <p><a href "#">Afficher plus</a></p>
+                            <p id="more"><a href "#">Afficher plus</a></p>
                         </div>
                     </div>
                 </article>
@@ -193,7 +193,7 @@
                                 <div class="hotel_info_side">
                                     <div class="popular_name">
                                         <p class="accommodation_name_aside">Hôtel Le soleil du<br> matin</p>
-                                        <p>Nuit à partir de 128<span>€</span></p>
+                                        <p class="price">Nuit à partir de 128<span>€</span></p>
                                     </div>
                                     <div class="hotel_stars_aside">
                                         <i class="blue fas fa-star"></i>
@@ -217,7 +217,7 @@
                                 <div class="hotel_info_side">
                                     <div class="popular_name">
                                         <p class="accommodation_name_aside">Au coeur de l'eau<br>Chambres d'hôtes</p>
-                                        <p>Nuit à partir de 71<span>€</span></p>
+                                        <p class="price">Nuit à partir de 71<span>€</span></p>
                                     </div>
                                     <div class="hotel_stars_aside">
                                         <i class="blue fas fa-star"></i>
@@ -241,7 +241,7 @@
                                 <div class="hotel_info_side">
                                     <div class="popular_name">
                                         <p class="accommodation_name_aside">Hôtel Tout bleu et<br>Blanc</p>
-                                        <p>Nuit à partir de 68<span>€</span></p>
+                                        <p class="price">Nuit à partir de 68<span>€</span></p>
                                     </div>
                                     <div class="hotel_stars_aside">
                                         <i class="blue fas fa-star"></i>
@@ -262,7 +262,7 @@
             <div id="activity_in_marseille">
                 <h3 id="Activity">Activités à Marseille</h3>
 
-                <div class="activity_box">
+                <div id="activity_box">
                     <div id="vieux_port">
                         <a href="#" class="card">
                             <img class="vieux_port_photo" src="images/activites/4_small/vieux_port.jpg" alt="Vieux Port">
@@ -319,33 +319,39 @@
         </section>
 
         <!--Footer/Pied de page-->
-        <footer>
-            <ul>
-                <li>
-                    <h4>A Propos</h4>
-                </li>
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Conditions générales de ventes</a></li>
-                <li><a href="#">Données de confidentialité</a></li>
-            </ul>
+        <footer id="footer_box">
 
-            <ul>
-                <li>
-                    <h4>Nos Hébergements</h4>
-                </li>
-                <li><a href="#">Charte qualité</a></li>
-                <li><a href="#">Soumettre votre Hôtel</a></li>
-            </ul>
+            <div id="about">
+                <ul>
+                    <li>
+                        <h4>A Propos</h4>
+                    </li>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de ventes</a></li>
+                    <li><a href="#">Données de confidentialité</a></li>
+                </ul>
+            </div>
+            <div id="our accommodations">
+                <ul>
+                    <li>
+                        <h4>Nos Hébergements</h4>
+                    </li>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre Hôtel</a></li>
+                </ul>
+            </div>
+            <div id="assistance">
+                <ul>
+                    <li>
+                        <h4>Assistance</h4>
+                    </li>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous Contacter</a></li>
+                </ul>
+            </div>
 
-            <ul>
-                <li>
-                    <h4>Assistance</h4>
-                </li>
-                <li><a href="#">Centre d'aide</a></li>
-                <li><a href="#">Nous Contacter</a></li>
-            </ul>
         </footer>
-    </div>
+
 </body>
 
 </html>
