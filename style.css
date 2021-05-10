@@ -1,577 +1,569 @@
-    /*Download Raleway Font/Téléchargement de la police Raleway*/
-    
-    @font-face {
-        font-family: 'RalewayBlack';
-        src: url('Raleway-Black.ttf');
-    }
-    
-    @font-face {
-        font-family: 'RalewayBold';
-        src: url('Raleway-Bold.ttf');
-    }
-    
-    @font-face {
-        font-family: 'RalewayExtraBold';
-        src: url('Raleway-ExtraBold.ttf');
-        src: url('Raleway-ExtraBoldItalic.tff');
-    }
-    
-    @font-face {
-        font-family: 'Ralewayregular';
-        src: url('Raleway-Regular.ttf');
-    }
-    /*General/Général*/
-    
-    #main_bloc {
-        max-width: 1440px;
-        margin: auto
-    }
-    
-    h1,
-    h2,
-    h3 {
-        font-family: 'RalewayBold';
-    }
-    
-    h2 {
-        font-size: 0.9em;
-        font-weight: bold;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    .card :hover {
-        color: #0065fc;
-    }
-    
-    span {
-        font-weight: bold;
-    }
-    /*Header/En tête*/
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    #main_menu {
-        text-decoration: none;
-        list-style-type: none;
-    }
-    
-    .menu a:hover {
-        color: #0065fc;
-        border-top: 2px #0065fc solid;
-        padding-top: 35px;
-    }
-    
-    nav ul {
-        display: flex;
-        padding-top: 15px;
-    }
-    
-    header ul li {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-    
-    .menu a {
-        color: black;
-        font-family: 'RalewayRegular';
-    }
-    
-    #sign_up {
-        font-family: 'RalewayBold';
-        color: #0065fc;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    
-    #sign_up a:hover {
-        color: #0065fc;
-        border-top: 2px #0065fc solid;
-        padding-top: 35px;
-    }
-    /*Search Bar and Filters/Barre de Recherche et Filtres*/
-    
-    .search_bar {
-        display: flex;
-        align-items: center;
-    }
-    
-    .iconmap {
-        background-color: #f2f2f2;
-        padding: 12px;
-        height: auto;
-        text-align: center;
-        border-radius: 15px 0 0 15px;
-    }
-    
-    #search {
-        padding: 10px;
-        font-weight: bold;
-    }
-    
-    #search_button {
-        font-family: 'RalewayRegular';
-        background-color: #0065fc;
-        border: #0065fc;
-        padding: 11px;
-        border-radius: 0 15px 15px 0;
-        color: white;
-        text-align: center;
-        height: auto;
-        outline: none;
-        cursor: pointer;
-    }
-    
-    #search_button:active {
-        background-color: #DEEBFF;
-    }
-    
-    #filter {
-        margin-top: 25px;
-        display: flex;
-        flex-wrap: wrap;
-        font-weight: bold;
-    }
-    
-    .filter_button {
-        display: flex;
-        margin-right: 18px;
-        margin-left: 18px;
-        border: 2px #f2f2f2 solid;
-        border-radius: 30px;
-        padding-right: 15px;
-        cursor: pointer;
-    }
-    
-    .filter_button:hover {
-        background-color: #0065fc;
-    }
-    
-    .icontype {
-        background-color: #DEEBFF;
-        color: #0065fc;
-        padding: 10px;
-        border-radius: 25px;
-        margin-right: 10px;
-        text-align: center;
-    }
-    
-    #info {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .iconinfo {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .available_info {
-        font-family: 'RalewayRegular';
-        margin-left: 10px;
-    }
-    
-    .iconglass {
-        visibility: hidden;
-    }
-    /*Accomodation in Marseille/Hébergements à Marseille*/
-    
-    #accommodation_in_marseille {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    
-    .card {
-        display: inline-block;
-        height: 100%;
-    }
-    
-    #marseille_result {
-        background-color: #f2f2f2;
-        border-radius: 10px;
-        width: 875px;
-        height: 625px;
-        padding-top: 35px;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    
-    h3 {
-        font-size: 1.5em;
-    }
-    
-    #accommodation_box {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 100%;
-        height: 90%;
-    }
-    
-    .first_line {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 20px;
-    }
-    
-    .second_line {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 10px;
-    }
-    
-    .hotel_photo {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        width: 240px;
-        height: 113px;
-        object-fit: cover;
-    }
-    
-    .hotel_photo:hover {
-        transform: scale(1.2);
-        transition: all 0.2s ease-in-out;
-    }
-    
-    .hotel_box {
-        background-color: white;
-        padding: 6px;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    p.accommodation_name {
-        font-family: 'RalewayBold';
-        font-size: 17px;
-        padding-left: 15px;
-        font-weight: bold;
-        color: black;
-    }
-    
-    .price {
-        font-size: 14px;
-        font-family: 'RalewayRegular';
-        color: black;
-    }
-    
-    .hotel_stars {
-        padding-left: 15px;
-        color: black;
-    }
-    
-    .blue {
-        color: #0065fc;
-    }
-    
-    .grey {
-        color: #f2f2f2
-    }
-    
-    #more a:hover {
-        color: #0065fc;
-    }
-    
-    .display_more {
-        padding-bottom: 30px;
-    }
-    
-    #more a {
-        font-family: 'RalewayBold';
-        font-weight: bold;
-        color: black;
-    }
-    /*Most popular/ Les plus populaires*/
-    
-    article,
-    aside {
-        text-align: justify;
-    }
-    
-    aside {
-        background-color: #f2f2f2;
-        border-radius: 10px;
-        padding-top: 35px;
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 592px;
-        width: 28%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 33px;
-        align-items: center;
-    }
-    
-    #aside_title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 88%;
-    }
-    
-    #aside_title h2 {
-        font-size: 1.5em
-    }
-    
-    .icone_aside {
-        font-size: 1.5em;
-        align-items: center;
-    }
-    
-    .popular_box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 87%;
-        width: 80%;
-        align-items: center;
-    }
-    
-    .popular_hotel_box {
-        width: 100%;
-        height: 26%;
-        background-color: white;
-        border-radius: 20px;
-        padding: 6px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .photo_info {
-        display: flex;
-        justify-content: start;
-        height: 100%;
-    }
-    
-    .hotel_photo_aside {
-        height: 135px;
-        width: 127px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        object-fit: cover;
-    }
-    
-    .hotel_photo_aside:hover {
-        transform: scale(1.2);
-        transition: all 0.2s ease-in-out;
-    }
-    
-    .hotel_info_side {
-        margin-left: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    
-    .popular_name {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .accommodation_name_aside {
-        font-weight: bold;
-        font-size: 18px;
-    }
-    
-    p.accommodation_name_aside {
-        font-family: 'RalewayBold';
-        font-size: 17px;
-        padding-left: 15px;
-        font-weight: bold;
-        color: black;
-    }
-    
-    .hotel_stars_aside {
-        padding-bottom: 15px;
-    }
-    /*Activity in Marseille/Activités à Marseille*/
-    
-    #activity_box {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        width: 100%;
-        margin: auto;
-    }
-    
-    .tourist_activity {
-        font-family: 'Ralewayextrabold';
-        font-size: 18px;
-        font-weight: bold;
-        color: black;
-        margin-left: 20px;
-    }
-    
-    #vieux_port {
-        background-color: white;
-        border-radius: 20px;
-        width: 306px;
-        height: auto;
-        box-shadow: 0px 0px 12px 2px #00000040;
-    }
-    
-    .vieux_port_photo {
-        width: 100%;
-        height: 385px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        object-fit: cover;
-    }
-    
-    #pomeges_frioul,
-    #notredame_longchamp {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 297px;
-    }
-    
-    #pomegues {
-        margin-bottom: auto;
-        background-color: white;
-        border-radius: 20px;
-        width: 297px;
-        height: auto;
-        box-shadow: 0px 0px 12px 2px #00000040;
-    }
-    
-    .pomegues_photo {
-        width: 297px;
-        height: 177px;
-        object-fit: cover;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-        align-items: center;
-    }
-    
-    #frioul {
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 0px 0px 12px 2px #00000040;
-        height: auto;
-        width: 297px;
-    }
-    
-    .frioul_photo {
-        width: 297px;
-        height: 113px;
-        object-fit: cover;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-    }
-    
-    #calanques {
-        background-color: white;
-        border-radius: 20px;
-        width: 297px;
-        height: auto;
-        box-shadow: 0px 0px 12px 2px #00000040;
-    }
-    
-    .calanques_photo {
-        width: 297px;
-        height: 385px;
-        object-fit: cover;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-    }
-    
-    #notre_dame {
-        background-color: white;
-        border-radius: 20px;
-        width: 297px;
-        height: auto;
-        box-shadow: 0px 0px 12px 2px #00000040;
-    }
-    
-    .notre_dame_photo {
-        width: 297px;
-        height: 136px;
-        object-fit: cover;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-    }
-    
-    #longchamp {
-        background-color: white;
-        border-radius: 20px;
-        width: 297px;
-        height: auto;
-        box-shadow: 0px 0px 12px 2px #00000040;
-        margin: auto;
-    }
-    
-    .longchamp_photo {
-        width: 297px;
-        height: 150px;
-        object-fit: cover;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-    }
-    
-    .longchamp_photo:hover {
-        transform: scale(1.05);
-        transition: all 0.2s ease-in-out;
-    }
-    
-    .vieux_port_photo:hover {
-        transform: scale(1.05);
-        transition: all 0.2s ease-in-out;
-    }
-    
-    .pomegues_photo:hover {
-        transform: scale(1.05);
-        transition: all 0.2s ease-in-out;
-    }
-    
-    .calanques_photo:hover {
-        transform: scale(1.05);
-        transition: all 0.2s ease-in-out;
-    }
-    
-    .notre_dame_photo:hover {
-        transform: scale(1.05);
-        transition: all 0.2s ease-in-out;
-    }
-    
-    .frioul_photo:hover {
-        transform: scale(1.05);
-        transition: all 0.2s ease-in-out;
-    }
-    /*Footer/pied de page*/
-    
-    #footer_box {
-        background-color: #f2f2f2;
-        margin-top: 40px;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    h4 {
-        font-family: 'RalewayBold';
-        margin-left: 10px;
-    }
-    
-    footer ul {
-        list-style-type: none;
-    }
-    
-    #footer_box li a {
-        margin: 10px;
-        color: black;
-        font-family: 'RalewayRegular';
-    }
-    
-    footer li a:hover {
-        color: #0065fc
-    }
+        /*Download Raleway Font/Téléchargement de la police Raleway*/
+        
+        @font-face {
+            font-family: 'RalewayBlack';
+            src: url('Raleway-Black.ttf');
+        }
+        
+        @font-face {
+            font-family: 'RalewayBold';
+            src: url('Raleway-Bold.ttf');
+        }
+        
+        @font-face {
+            font-family: 'RalewayExtraBold';
+            src: url('Raleway-ExtraBold.ttf');
+            src: url('Raleway-ExtraBoldItalic.tff');
+        }
+        
+        @font-face {
+            font-family: 'Ralewayregular';
+            src: url('Raleway-Regular.ttf');
+        }
+        /*General/Général*/
+        
+        #main_bloc {
+            max-width: 1440px;
+            margin: auto
+        }
+        
+        h1,
+        h2,
+        h3 {
+            font-family: 'RalewayBold';
+        }
+        
+        h2 {
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .card :hover {
+            color: #0065fc;
+        }
+        
+        span {
+            font-weight: bold;
+        }
+        /*Header/En tête*/
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #main_menu {
+            text-decoration: none;
+            list-style-type: none;
+        }
+        
+        .menu a:hover {
+            color: #0065fc;
+            border-top: 2px #0065fc solid;
+            padding-top: 35px;
+        }
+        
+        nav ul {
+            display: flex;
+            padding-top: 15px;
+        }
+        
+        header ul li {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        
+        .menu a {
+            color: black;
+            font-family: 'RalewayRegular';
+        }
+        
+        #sign_up {
+            font-family: 'RalewayBold';
+            color: #0065fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        #sign_up a:hover {
+            color: #0065fc;
+            border-top: 2px #0065fc solid;
+            padding-top: 35px;
+        }
+        /*Search Bar and Filters/Barre de Recherche et Filtres*/
+        
+        .search_bar {
+            display: flex;
+            align-items: center;
+        }
+        
+        .iconmap {
+            background-color: #f2f2f2;
+            padding: 12px;
+            height: auto;
+            text-align: center;
+            border-radius: 15px 0 0 15px;
+        }
+        
+        #search {
+            padding: 10px;
+            font-weight: bold;
+            margin-right: -20px;
+        }
+        
+        #search_button {
+            font-family: 'RalewayRegular';
+            background-color: #0065fc;
+            border: #0065fc;
+            padding: 12px;
+            border-radius: 0 15px 15px 0;
+            color: white;
+            text-align: center;
+            height: auto;
+            outline: none;
+            cursor: pointer;
+        }
+        
+        #search_button:active {
+            background-color: #DEEBFF;
+        }
+        
+        #filter {
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: bold;
+        }
+        
+        .filter_button {
+            display: flex;
+            margin-right: 18px;
+            margin-left: 18px;
+            border: 2px #f2f2f2 solid;
+            border-radius: 30px;
+            padding-right: 15px;
+            cursor: pointer;
+        }
+        
+        .filter_button:hover {
+            background-color: #0065fc;
+        }
+        
+        .icontype {
+            background-color: #DEEBFF;
+            color: #0065fc;
+            padding: 10px;
+            border-radius: 25px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        
+        #info {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .iconinfo {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .available_info {
+            font-family: 'RalewayRegular';
+            margin-left: 10px;
+        }
+        
+        .iconglass {
+            visibility: hidden;
+        }
+        /*Accomodation in Marseille/Hébergements à Marseille*/
+        
+        #accommodation_in_marseille {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            display: inline-block;
+            height: 100%;
+        }
+        
+        #marseille_result {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            width: 875px;
+            height: 625px;
+            padding-top: 35px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+        }
+        
+        #accommodation_box {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 100%;
+            height: 90%;
+        }
+        
+        .first_line {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+        }
+        
+        .second_line {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+        }
+        
+        .hotel_photo {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 240px;
+            height: 113px;
+            object-fit: cover;
+        }
+        
+        .hotel_photo:hover {
+            transform: scale(1.2);
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .hotel_box {
+            background-color: white;
+            padding: 6px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        p.accommodation_name {
+            font-family: 'RalewayBold';
+            font-size: 17px;
+            padding-left: 15px;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .price {
+            font-size: 14px;
+            font-family: 'RalewayRegular';
+            color: black;
+        }
+        
+        .hotel_stars {
+            padding-left: 15px;
+            color: black;
+        }
+        
+        .blue {
+            color: #0065fc;
+        }
+        
+        .grey {
+            color: #f2f2f2
+        }
+        
+        #more a:hover {
+            color: #0065fc;
+        }
+        
+        .display_more {
+            padding-bottom: 30px;
+        }
+        
+        #more a {
+            font-family: 'RalewayBold';
+            font-weight: bold;
+            color: black;
+        }
+        /*Most popular/ Les plus populaires*/
+        
+        aside {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding-top: 35px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 592px;
+            width: 28%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 33px;
+            align-items: center;
+        }
+        
+        #aside_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 88%;
+        }
+        
+        #aside_title h2 {
+            font-size: 1.5em
+        }
+        
+        .icone_aside {
+            font-size: 1.5em;
+            align-items: center;
+        }
+        
+        .popular_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 87%;
+            width: 80%;
+            align-items: center;
+        }
+        
+        .popular_hotel_box {
+            width: 100%;
+            height: 26%;
+            background-color: white;
+            border-radius: 20px;
+            padding: 6px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .photo_info {
+            display: flex;
+            justify-content: start;
+            height: 100%;
+        }
+        
+        .hotel_photo_aside {
+            height: 135px;
+            width: 127px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            object-fit: cover;
+        }
+        
+        .hotel_photo_aside:hover {
+            transform: scale(1.2);
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .hotel_info_side {
+            margin-left: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .popular_name {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .accommodation_name_aside {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        p.accommodation_name_aside {
+            font-family: 'RalewayBold';
+            font-size: 17px;
+            padding-left: 15px;
+            font-weight: bold;
+            color: black;
+        }
+        
+        .hotel_stars_aside {
+            padding-bottom: 15px;
+        }
+        /*Activity in Marseille/Activités à Marseille*/
+        
+        #activity_box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: auto;
+        }
+        
+        .tourist_activity {
+            font-family: 'Ralewaybold';
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            margin-left: 20px;
+        }
+        
+        .tourist_activity :hover {
+            color: #0065fc;
+        }
+        
+        #vieux_port {
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 297px;
+            height: 440px;
+            box-shadow: 0px 0px 15px 2px #00000040;
+        }
+        
+        .vieux_port_photo {
+            width: 100%;
+            height: 390px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            object-fit: cover;
+        }
+        
+        #pomeges_frioul,
+        #notredame_longchamp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 297px;
+        }
+        
+        #pomegues {
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 297px;
+            height: 240px;
+            box-shadow: 0px 0px 12px 2px #00000040;
+        }
+        
+        .pomegues_photo {
+            width: 297px;
+            height: 177px;
+            object-fit: cover;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            align-items: center;
+        }
+        
+        #frioul {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 12px 2px #00000040;
+            height: 165px;
+            width: 297px;
+            margin-top: 35px;
+        }
+        
+        .frioul_photo {
+            width: 297px;
+            height: 113px;
+            object-fit: cover;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        
+        #calanques {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 20px;
+            width: 297px;
+            height: 440px;
+            box-shadow: 0px 0px 12px 2px #00000040;
+        }
+        
+        .calanques_photo {
+            width: 297px;
+            height: 385px;
+            object-fit: cover;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        
+        #notre_dame {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 20px;
+            width: 297px;
+            height: auto;
+            box-shadow: 0px 0px 12px 2px #00000040;
+        }
+        
+        .notre_dame_photo {
+            width: 297px;
+            height: 136px;
+            object-fit: cover;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        
+        #longchamp {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 20px;
+            width: 297px;
+            height: auto;
+            box-shadow: 0px 0px 12px 2px #00000040;
+            margin-top: auto;
+        }
+        
+        .longchamp_photo {
+            width: 297px;
+            height: 150px;
+            object-fit: cover;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        
+        .longchamp_photo:hover,
+        .vieux_port_photo:hover,
+        .pomegues_photo:hover,
+        .notre_dame_photo:hover,
+        .calanques_photo:hover,
+        .frioul_photo:hover {
+            transform: scale(1.05);
+            transition: all 0.2s ease-in-out;
+        }
+        /*Footer/pied de page*/
+        
+        #footer_box {
+            background-color: #f2f2f2;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        h4 {
+            font-family: 'RalewayBold';
+            margin-left: 10px;
+        }
+        
+        footer ul {
+            list-style-type: none;
+        }
+        
+        #footer_box li a {
+            margin: 10px;
+            font-family: 'RalewayRegular';
+            color: black;
+        }
+        
+        #footer_box a:hover {
+            color: #0065fc
+        }
