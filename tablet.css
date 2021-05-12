@@ -1,0 +1,226 @@
+    /*header*/
+    
+    #main_bloc {
+        max-width: 768px;
+        width: 100%;
+        margin: 0px;
+    }
+    
+    header {
+        flex-wrap: wrap;
+    }
+    
+    header ul li {
+        padding: 0px;
+    }
+    
+    .logo {
+        margin-top: -20px;
+        height: 90px;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    #main_menu {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+    }
+    
+    li.menu {
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    
+    li.menu:hover {
+        border-bottom: 3px solid #0065fc;
+    }
+    
+    .menu {
+        text-align: center;
+        margin: auto;
+    }
+    
+    .menu a:hover {
+        border-top: none;
+    }
+    
+    #sign_up {
+        position: absolute;
+        right: 15px;
+        top: 30px;
+    }
+    
+    #sign_up a:hover {
+        border-top: none;
+    }
+    /*Search Bar and Filters/Barre de Recherche et Filtres*/
+    
+    .iconglass {
+        visibility: visible;
+        background-color: #0065fc;
+        border: #0065fc;
+        font-weight: bold;
+        color: white;
+        height: auto;
+        text-align: center;
+        padding: 13px;
+        border-radius: 15px;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .iconglass:hover {
+        transform: scale(1.05);
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .iconglass:active {
+        background-color: grey;
+    }
+    
+    #search_button {
+        display: none;
+    }
+    
+    .search_bar {
+        justify-content: space-between;
+    }
+    
+    #search {
+        flex: 1
+    }
+    
+    #filters_and_search_bar h2 {
+        width: 100%;
+    }
+    
+    .filter_button {
+        margin-bottom: 15px;
+    }
+    
+    #info {
+        align-items: center;
+    }
+    /*!--Popular Hotels/Hôtels Populaires--*/
+    
+    #accommodation_in_marseille {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+    }
+    
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 37px;
+        width: 100%;
+        padding-right: 10px;
+    }
+    
+    .popular_box {
+        width: 98%;
+    }
+    /*Accomodation in Marseille/Hébergements à Marseille*/
+    
+    #marseille_result {
+        width: 100%;
+        height: 1600px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    #accommodation_box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+    }
+    
+    .hotel_photo {
+        width: 100%;
+        height: 113px;
+    }
+    
+    .first_line,
+    .second_line {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding-bottom: 10px;
+    }
+    
+    .hotel_box {
+        height: 200px;
+        padding-top: 10px;
+    }
+    
+    p.accommodation_name {
+        margin-top: 3px;
+    }
+    
+    .display_more {
+        padding-bottom: 10px;
+    }
+    /*Activity in Marseille/Activités à Marseille*/
+    
+    #activity_in_marseille {
+        width: 100%;
+    }
+    
+    #activity_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    #vieux_port,
+    #pomegues_frioul,
+    #notredame_longchamp,
+    #calanques {
+        width: 100%;
+    }
+    
+    #vieux_port,
+    #calanques,
+    #pomegues,
+    #frioul,
+    #notre_dame,
+    #longchamp {
+        margin-bottom: 10px;
+        height: 190px;
+    }
+    
+    .vieux_port_photo,
+    .pomegues_photo,
+    .frioul_photo,
+    .calanques_photo,
+    .notre_dame_photo,
+    .longchamp_photo {
+        height: 130px;
+        width: 100%;
+    }
+    /*Footer/pied de page*/
+    
+    #footer_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    footer ul {
+        padding-left: 0px;
+        width: 100%;
+    }

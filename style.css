@@ -116,7 +116,7 @@
         }
         
         #search_button {
-            font-family: 'RalewayRegular';
+            font-family: 'RalewayBold';
             background-color: #0065fc;
             border: #0065fc;
             padding: 12px;
@@ -126,10 +126,16 @@
             height: auto;
             outline: none;
             cursor: pointer;
+            font-size: 15px;
+        }
+        
+        #search_button:hover {
+            transform: scale(1.05);
+            transition: all 0.2s ease-in-out;
         }
         
         #search_button:active {
-            background-color: #DEEBFF;
+            background-color: grey;
         }
         
         #filter {
