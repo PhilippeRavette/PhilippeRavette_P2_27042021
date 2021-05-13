@@ -458,7 +458,7 @@
         }
         
         .pomegues_photo {
-            width: 100%;
+            width: 297px;
             height: 177px;
             object-fit: cover;
             border-top-right-radius: 20px;
@@ -478,7 +478,7 @@
         }
         
         .frioul_photo {
-            width: 100%;
+            width: 297px;
             height: 113px;
             object-fit: cover;
             border-top-right-radius: 20px;
