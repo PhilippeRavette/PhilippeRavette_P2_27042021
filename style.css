@@ -369,7 +369,7 @@
             transition: all 0.2s ease-in-out;
         }
         
-        .hotel_info_side {
+        .hotel_info_aside {
             margin-left: 25px;
             display: flex;
             flex-direction: column;
