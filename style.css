@@ -96,6 +96,10 @@
         }
         /*Search Bar and Filters/Barre de Recherche et Filtres*/
         
+        #center {
+            font-family: 'Raleway-Regular'
+        }
+        
         .search_bar {
             display: flex;
             align-items: center;
@@ -439,7 +443,7 @@
             object-fit: cover;
         }
         
-        #pomeges_frioul,
+        #pomegues_frioul,
         #notredame_longchamp {
             display: flex;
             flex-direction: column;
@@ -474,7 +478,7 @@
             box-shadow: 0px 0px 12px 2px #00000040;
             height: 165px;
             width: 100%;
-            margin-top: 35px;
+            margin: auto;
         }
         
         .frioul_photo {
