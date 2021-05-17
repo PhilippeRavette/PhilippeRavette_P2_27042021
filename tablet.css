@@ -1,7 +1,8 @@
     /*header*/
     
     #main_bloc {
-        max-width: 768px;
+        min-width: 769px;
+        max-width: 1280px;
         width: 100%;
         margin: 0px;
     }
