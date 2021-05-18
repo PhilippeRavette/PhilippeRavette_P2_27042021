@@ -42,10 +42,6 @@
             text-decoration: none;
         }
         
-        .card :hover {
-            color: #0065fc;
-        }
-        
         span {
             font-weight: bold;
         }
@@ -425,10 +421,6 @@
             font-weight: bold;
             color: black;
             margin-left: 20px;
-        }
-        
-        .tourist_activity :hover {
-            color: #0065fc;
         }
         
         #vieux_port {
