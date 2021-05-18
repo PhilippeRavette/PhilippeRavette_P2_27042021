@@ -64,7 +64,7 @@ li.menu:hover {
 .iconglass {
     visibility: visible;
     background-color: #0065fc;
-    border: #0065fc;
+    border: transparent;
     font-weight: bold;
     color: white;
     height: auto;

@@ -118,7 +118,7 @@
         #search_button {
             font-family: 'RalewayBold';
             background-color: #0065fc;
-            border: #0065fc;
+            border: transparent;
             padding: 12px;
             border-radius: 0 15px 15px 0;
             color: white;
