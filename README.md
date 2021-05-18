@@ -12,7 +12,7 @@ C'est le deuxième projet du parcours de développeur WEB d'OpenClassroom. L'obj
 - La police est ["Raleway"](https://fonts.google.com/specimen/Raleway).
 - Même si aucune maquette pour la résolution tablette n'est fournis, le site devra être aussi adapté aux tablettes.
 - L'intégration doit se faire en HTML5 & CSS3, sans framework (bootstrap par exemple).
-- Il est reconnandé d'utiliser Virtual Studio Code en utlisant plusieurs plugins comme Live Server/Git Graph.
+- Il est recommandé d'utiliser Virtual Studio Code en utlisant plusieurs plugins comme Live Server/Git Graph.
 - Le code devra utiliser les balises sémantiques.
 - [Le code ne doit contenir aucune erreur ni alerte au validateur W3C HTML et CSS.](https://validator.w3.org/nu/?doc=https%3A%2F%2Fphilipperavette.github.io%2FReservia-project%2F)
 - Le site devra être compatible avec les dernières versions de Chrome et Firefox.
