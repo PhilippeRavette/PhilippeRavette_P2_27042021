@@ -97,7 +97,7 @@
         /*Search Bar and Filters/Barre de Recherche et Filtres*/
         
         #center {
-            font-family: 'Raleway-Regular'
+            font-family: 'Ralewayregular'
         }
         
         .search_bar {
@@ -455,6 +455,7 @@
             flex-direction: column;
             align-items: center;
             width: 297px;
+            justify-content: space-between;
         }
         
         #pomegues {
@@ -484,7 +485,6 @@
             box-shadow: 0px 0px 12px 2px #00000040;
             height: 165px;
             width: 100%;
-            margin: auto;
         }
         
         .frioul_photo {
