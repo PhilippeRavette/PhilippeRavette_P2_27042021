@@ -130,7 +130,7 @@
     
     #marseille_result {
         width: 100%;
-        height: 1600px;
+        height: 1720px;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -163,7 +163,7 @@
     }
     
     .hotel_box {
-        height: 200px;
+        height: 220px;
         padding-top: 10px;
     }
     
